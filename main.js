@@ -5,8 +5,12 @@ const api = "eae2a5e6dc35e18b5696bd1bcbd7e5af";
 window.addEventListener("load", () => {
   let long;
   let lat;
-  //acessando a geolocação do usuario
+  // Accesing Geolocation of User
   if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition((position) => {});
+    navigator.geolocation.getCurrentPosition((position) => {
+      // Storing Longitude and Latitude in variables
+      long = position.coords.longitude;
+      lat = position.coords.latitude;
+    });
   }
 });
