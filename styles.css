@@ -2,9 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: white;
 }
 body {
   font-family: "Inter";
+  background-image: url("fundo.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .container {
   height: 100vh;
@@ -13,13 +17,13 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: rgb(251, 242, 133);
+  /* background: rgb(0, 0, 0);
   background: radial-gradient(
     circle,
-    rgba(251, 242, 133, 0.6) 0%,
-    rgba(224, 196, 91, 0.84) 35%,
-    rgba(230, 224, 113, 1) 100%
-  );
+    rgba(76, 86, 106) 0%,
+    rgba(59, 66, 82) 35%,
+    rgb(46, 52, 64) 100%
+  ); */
 }
 .weather {
   display: flex;
@@ -37,7 +41,7 @@ body {
   text-transform: capitalize;
 }
 .circle {
-  background-color: black;
+  background-color: rgb(255, 255, 255);
   border-radius: 50px;
   height: 15px;
   width: 15px;
