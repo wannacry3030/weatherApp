@@ -2,13 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: white;
+  color: #333;
 }
 body {
   font-family: "Inter";
-  background-image: url("fundo.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: linear-gradient(to top left, #50b9cc 0%, #bf2e94 100%);
 }
 .container {
   height: 100vh;
@@ -17,13 +15,17 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  /* background: rgb(0, 0, 0);
-  background: radial-gradient(
-    circle,
-    rgba(76, 86, 106) 0%,
-    rgba(59, 66, 82) 35%,
-    rgb(46, 52, 64) 100%
-  ); */
+}
+.square {
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  background-color: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(200px);
+  filter: blur();
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .weather {
   display: flex;
@@ -41,7 +43,7 @@ body {
   text-transform: capitalize;
 }
 .circle {
-  background-color: rgb(255, 255, 255);
+  background-color: #333;
   border-radius: 50px;
   height: 15px;
   width: 15px;
